@@ -35,7 +35,7 @@ const type=["text","text","text","password"];
     
      <form >
 
-       <Form number={4} name={name}  type={type} Button={<Button label="Signup" className="row mt-4" type="submit"/>} formData={formData} handleChange={handleChange} handleSubmit={handleSubmit}/>
+       <Form number={4} name={name}  type={type} Button={<Button label="Signup" className="row mt-4 hover:border-slate-400 border-4 border-rose-500" type="submit"/>} formData={formData} handleChange={handleChange} handleSubmit={handleSubmit}/>
     
      </form>
      

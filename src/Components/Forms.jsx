@@ -9,7 +9,7 @@ function Form({number,name,type,Button}){
         <>
         <div className="row mt-3">
         <label key={index} >{name[index]}</label>
-        <input key={index} type={type[index]}></input>
+        <input key={index} className="border-4 border-rose-500 hover:border-slate-400 " type={type[index]}></input>
        </div>
        </>
         
