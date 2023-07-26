@@ -1,8 +1,6 @@
 import React from "react";
 
-
-
-function Form({number,name,type}){
+function Form({number,name,type,Button}){
 
 
     const numberOfElements = number;
@@ -20,18 +18,8 @@ function Form({number,name,type}){
  return(
 
 <>
-
-{/* <div className="container ">
-  <div className="d-flex justify-content-center align-items-center  mt-3"  style={{ height: "90vh" }}>
-    
-     <form > */}
-     
        {elements}
-
-     {/* </form>
-
- </div>
-</div> */}
+       {Button}
 
 </>
 
