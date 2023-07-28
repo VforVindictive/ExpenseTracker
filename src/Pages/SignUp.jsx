@@ -28,9 +28,9 @@ const name=["First Name","Last Name","Email","Password"]
 const type=["text","text","text","password"];
 
  return(
-  <>
+ 
   
-  <div className="container ">
+  <div className="container  bg-yellow-50 ">
   <div className="d-flex justify-content-center align-items-center  mt-3"  style={{ height: "90vh" }}>
     
      <form >
@@ -42,7 +42,7 @@ const type=["text","text","text","password"];
   </div>
   </div>
 
-  </>
+  
 
 );
 }
