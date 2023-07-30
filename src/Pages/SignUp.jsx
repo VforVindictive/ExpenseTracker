@@ -30,12 +30,12 @@ const type=["text","text","text","password"];
  return(
  
   
-  <div className="container  bg-yellow-50 ">
-  <div className="d-flex justify-content-center align-items-center  mt-3"  style={{ height: "90vh" }}>
+  <div className="flex min-h-screen bg-yellow-50 justify-content-center align-items-center  ">
+  <div className="flex justify-content-center align-items-center bg-yellow-100   "  >
     
      <form >
 
-       <Form number={4} name={name}  type={type} Button={<Button label="Signup" className="row mt-4 hover:border-slate-400 border-4 border-rose-500" type="submit"/>} formData={formData} handleChange={handleChange} handleSubmit={handleSubmit}/>
+       <Form number={4} name={name}  type={type} Button={<Button label="Signup" className="w-full md:w-1/2 lg:w-1/3 px-4 hover:border-slate-400 border-4 border-rose-500" type="submit"/>} formData={formData} handleChange={handleChange} handleSubmit={handleSubmit}/>
     
      </form>
      
