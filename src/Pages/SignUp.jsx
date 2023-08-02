@@ -1,15 +1,14 @@
-import React,{ useState } from "react";
-import './SignUp.css';
+import React, { useState } from "react";
+import "./SignUp.css";
 import Form from "../Components/Forms";
 import Button from "../Components/Button";
 
-function Signup(){
-
+function Signup() {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    password: '',
+    firstName: "",
+    lastName: "",
+    email: "",
+    password: "",
   });
 
   const handleChange = (event) => {
@@ -24,42 +23,42 @@ function Signup(){
     event.preventDefault();
   };
 
-const name=["First Name","Last Name","Email","Password"]
-const type=["text","text","text","password"];
+  const name = ["First Name", "Last Name", "Email", "Password"];
+  const type = ["text", "text", "text", "password"];
 
- return(
- 
-  
-  <div className="flex min-h-screen bg-yellow-50 justify-content-center align-items-center  ">
-  <div className="flex justify-content-center align-items-center bg-yellow-100   "  >
+  return (
     
-     <form >
+    <>
+      <section className="bg-gray-50">
+        <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0 ">
+          <span className="flex items-center mb-6 text-2xl font-semibold uppercase">SpendSavvy</span>
+          <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0">
+            <div className="p-6 space-y-4">
+              <h1 className="text-center  text-lg/[25px] font-bold font-serif">Create Your Accout</h1>
 
-       <Form number={4} name={name}  type={type} Button={<Button label="Signup" className="w-full md:w-1/2 lg:w-1/3 px-4 hover:border-slate-400 border-4 border-rose-500" type="submit"/>} formData={formData} handleChange={handleChange} handleSubmit={handleSubmit}/>
-    
-     </form>
-     
-  </div>
-  </div>
+              <Form
+                number={4}
+                name={name}
+                type={type}
+                Button={
+                  <Button
+                    label="Create Account"
+                    className="w-full text-white bg-blue-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                    type="submit"
+                    name="Create Acount"
+                  />
+                }
+                formData={formData}
+                handleChange={handleChange}
+                handleSubmit={handleSubmit}
+              />
 
-  
-
-);
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }
 
-export default Signup; 
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
+export default Signup;

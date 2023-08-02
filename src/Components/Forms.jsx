@@ -1,39 +1,31 @@
 import React from "react";
 
-function Form({number,name,type,Button}){
+function Form({ number, name, type, Button }) {
+  const numberOfElements = number;
+  const elements = Array.from({ length: numberOfElements }, (_, index) => (
+    <div className="">
+      <label
+        key={index}
+        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+      >
+        {name[index]}
+      </label>
+      <input
+        key={index}
+        className="block w-full p-2.5 bg-gray-50 border rounded-md "
+        type={type[index]}
+      ></input>
+    </div>
+  ));
 
-
-    const numberOfElements = number;
-    const elements = Array.from({ length: numberOfElements }, (_, index) => (
-
-        
-        <div className=" grid grid-cols-4 p-4">
-        <label key={index} >{name[index]}</label>
-        <input key={index} className="border-4 border-rose-500 rounded-md " type={type[index]}></input>
-       </div>
-       
-        
-        ));
-       
- return(
-
-<>
-       {elements}
-       {Button}
-
-</>
-
-)
+  return (
+    <>
+      <form action="#" className="space-y-4 md:space-y-6">
+        {elements}
+        {Button}
+      </form>
+    </>
+  );
 }
 
 export default Form;
-
-
-
-  
-
-
-
-
-
-

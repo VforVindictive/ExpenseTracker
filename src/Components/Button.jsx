@@ -8,9 +8,9 @@ function Button({label,className,type}){
 
 <>
 
-<div className={className}>
-    <button type={type} >{label}</button>
-</div>
+
+    <button type={type} className={className} >{label}</button>
+
 </>
 
  )};
