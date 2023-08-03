@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import "./SignUp.css";
+
 import Form from "../Components/Forms";
 import Button from "../Components/Button";
 
 function Signup() {
+  
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -25,6 +26,7 @@ function Signup() {
 
   const name = ["First Name", "Last Name", "Email", "Password"];
   const type = ["text", "text", "text", "password"];
+  const classes={label:"block mb-2 text-sm font-medium text-gray-900 dark:text-white",input:"block w-full p-2.5 bg-gray-50 border rounded-md ",form:"space-y-4 md:space-y-6"}
 
   return (
     
@@ -32,7 +34,7 @@ function Signup() {
       <section className="bg-gray-50">
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0 ">
           <span className="flex items-center mb-6 text-2xl font-semibold uppercase">SpendSavvy</span>
-          <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0">
+          <div className="w-full bg-white rounded-lg shadow-2xl dark:border md:mt-0 sm:max-w-md xl:p-0">
             <div className="p-6 space-y-4">
               <h1 className="text-center  text-lg/[25px] font-bold font-serif">Create Your Accout</h1>
 
@@ -40,6 +42,7 @@ function Signup() {
                 number={4}
                 name={name}
                 type={type}
+                style={classes}
                 Button={
                   <Button
                     label="Create Account"

@@ -7,10 +7,7 @@ function Button({label,className,type}){
  return (
 
 <>
-
-
-    <button type={type} className={className} >{label}</button>
-
+  <button type={type} className={className} >{label}</button>
 </>
 
  )};

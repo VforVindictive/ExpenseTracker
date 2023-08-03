@@ -1,10 +1,10 @@
-
-import Signup from './Pages/SignUp';
+import LogIn from './Pages/LogIn';
+// import Signup from './Pages/SignUp';
 
 function Layout() {
   return (
     <>
-     <Signup/>
+     <LogIn/>
      </>
   );
 }
